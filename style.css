@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    padding: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1, p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    border: 1px solid rgb(17, 15, 15);
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    padding: 3vh 10vh;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details {
+    display: flex;
+}
+
+img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.custom-border {
+    border: 2px solid #f0e6e6;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.repo-title {
+    color: #46bc58;
+}
+
+.repo-link {
+    padding-left: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-repo {
+    width: 390px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+#perpage {
+    width: 50px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.form-container {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.items-per-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+
+.btn-container {
+    height: 60px;
+    display: flex;
+    align-items: end;
+}
+
+#search {
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+#custom {
+    width: 200px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+.repoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.repos {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    justify-content: center;
+}
+
+.topics {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.btn {
+    height: 40px;
+    width: fit-content;
+    background-color: #46bc58;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-style: bold;
+}
+
+.pagination-container {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.pages {
+    width: fit-content;
+    display: flex;
+    border: 2px solid #eeeeee;
+    justify-content: center;
+}
+
+.pagination {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    gap: 100px;
+}
+
+.topic-btn {
+    background-color: #46bc58;
+    color: #fff;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-style: bold;
+    cursor: text;
+}
+
+.page-btn {
+    width: 35px;
+    color: #46bc58;
+    padding: 10px;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #46bc58;
+    color: #fff;
+}
+
+.disable {
+    color: gray;
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+.btn2 {
+    width: 100px;
+    color: #47b85b;
+    padding: 10px;
+    border: 2px solid #cacaca;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.loading {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #4abf5d;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3vh 10vh;
+    }
+}

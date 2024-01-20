@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./logo.jpeg">
+    <title>Fyle </title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container" style="padding: 10px;">
+        <form class="search-form">
+            <div class="items-per-page">
+                <label>Enter username <span style="color: red;">*</span></label>
+                <input type="text" id="search" placeholder="Enter username" required />
+            </div>
+            <div class="items-per-page">
+                <label>Enter Repo Name</label>
+                <input type="text" id="custom" placeholder="Search Repo..." />
+            </div>
+            <div class="items-per-page">
+                <label>Items per Page</label>
+                <select id="perpage">
+                    <option>10</option>
+                    <option>20</option>                   
+                    <option>50</option>
+                    <option>100</option>
+                </select>
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn" id="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="info">
+            <div class="custom-border">
+                <img id="profile" class="rounded-circle img-fluid" alt="profile" />
+            </div>
+            <div class="user-info">
+                <h1 id="name"></h1>
+                <p id="bio"></p>
+                <div style="display: flex;gap: 2px;align-items: center;">
+                    <?xml version="1.0" ?><svg height="20" width="20" viewBox="0 0 48 48" width="48"
+                        xmlns="http://www.w3.org/2000/svg">
+                       <path
+                            d="M24 4c-7.73 0-14 6.27-14 14 0 10.5 14 26 14 26s14-15.5 14-26c0-7.73-6.27-14-14-14zm0 19c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"  fill="#FFFFFF" /> 
+                            
+                        <path d="M0 0h48v48h-48z" fill="none" />
+                    </svg>
+                    <p id="location">
+
+                    </p>
+                </div>
+                <div id="twitterContainer" style="display: flex; gap: 5px;align-items: center;">Twitter: <a id="twitter" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="repo-link" style="display: flex;">
+            <svg height="28" width="28" preserveAspectRatio="none" class="i8-icon-path">
+                <path
+                    d="M6 7C3.239 7 1 9.239 1 12C1 14.761 3.239 17 6 17H9C9.55228 17 10 16.5523 10 16C10 15.4477 9.55228 15 9 15H6C4.343 15 3 13.657 3 12C3 10.343 4.343 9 6 9H9C9.55228 9 10 8.55228 10 8C10 7.44772 9.55228 7 9 7H6ZM15 7C14.4477 7 14 7.44772 14 8C14 8.55228 14.4477 9 15 9H18C19.657 9 21 10.343 21 12C21 13.657 19.657 15 18 15H15C14.4477 15 14 15.4477 14 16C14 16.5523 14.4477 17 15 17H18C20.761 17 23 14.761 23 12C23 9.239 20.761 7 18 7H15ZM8 11C7.44772 11 7 11.4477 7 12C7 12.5523 7.44772 13 8 13H16C16.5523 13 17 12.5523 17 12C17 11.4477 16.5523 11 16 11H8Z"
+                    style="height: 100%;">
+                </path>
+            </svg>
+            <a target="_blank" class="link"></a>
+        </div>
+
+
+        <div class="repoContainer">
+            <div class="loading">
+            </div>
+            <div class="repos">
+            </div>
+        </div>
+
+        <div class="pagination-container">
+            <div class="pagination">
+                <div class="pages">
+                </div>
+                <div class="btns">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"> </script>
+</body>
+
+</html>
